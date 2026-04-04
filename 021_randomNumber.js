@@ -1,6 +1,6 @@
 // generating a random number
 
-// generate between two numbers 5-10
+// generate between two numbers 5-20
 
 //only generates between 5-6
 const rand1 = Math.round(Math.random() + 5) 
@@ -11,11 +11,11 @@ const rand1 = Math.round(Math.random() + 5)
 
 
 //generates between 0 - 10
-const rand2 = Math.round(Math.random() * 10)
-// 0.56 *10 = 5.6 = 6
-// 0.23 * 10 = 2.3 = 2
-//0.04 = 0.4 = 0
-// 0.96 = 9.6 = 10
+const rand2 = Math.round(Math.random() * 20)
+//0.04 * 20 = 0.8 = 1
+// 0.23 * 20 = 4.6 = 5
+// 0.56 * 20 = 11.2 = 11
+// 0.99 * 20 = 19.8 = 20
 
 const rand3 = (min, max) => {
   const rand = Math.round(Math.random() * max)
