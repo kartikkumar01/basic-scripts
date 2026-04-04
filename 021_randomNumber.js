@@ -28,6 +28,16 @@ const rand3 = (min, max) => {
   return rand
 }
 
-for(let i = 0; i < 10; i++ ){
-  console.log(rand3(5,50))
+const rand4 = (min, max) => {
+  return Math.round(Math.random() * (max-min)) + min
+}
+
+//15-20 = diff(5)
+//0.01 * 5 = 0.05 = 0 = 0 +15 = 15
+//0.25 * 5 = 1.25 = 1 = 1+ 15 = 16
+//0.56 * 5 = 2.8 = 3 = 3+15 = 18
+//0.98 * 5 = 4.9 = 5 = 5 + 15 = 20
+
+for(let i = 0; i< 10 ; i++){
+  console.log(rand4(15,20))
 }
